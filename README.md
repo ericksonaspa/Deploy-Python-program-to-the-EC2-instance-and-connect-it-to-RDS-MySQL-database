@@ -11,6 +11,10 @@ This project demonstrates how to deploy your Python program to the EC2 instance 
 - Run the Python program
 - Check program output if stored on the RDS database
 
+The final architecture plans to be built through this project is as follows.
+
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/5bcb8735-4312-451b-8d65-d3728b7a0897)
+
 ### Create an IAM role
 
 1. On the AWS Management Console, search for the IAM console and open it in a new tab. In the navigation pane, choose **Roles**, and then choose **Create role**.
