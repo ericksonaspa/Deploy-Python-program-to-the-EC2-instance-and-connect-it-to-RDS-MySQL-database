@@ -116,7 +116,26 @@ Ensure that the following defaults are selected:
 
 ![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/3427f58f-3297-4ed1-96ad-003e5a37376c)
 
-3. On your instance, run the below commands to clone the Python program from my Git Repository and change the current working folder to the repository folder. We will then be editing the python file in order to connect to our database:
+3. Let's check if we can connect to our database. Enter the below command for us to log-in to the database.
+**Format: **mysql -h {database endpoint} -P 3306 -u {master username} -p
+
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/6737e16b-ded7-4485-929b-ec82374dfa04)
+
+Then, enter your master password. 
+
+4. Once we are successfully logged-in, we will now view our databases, select our database and check its tables. See the below commands:
+
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/fbb83841-8245-4325-9139-2ac267769376)
+
+5. We have verified that there are no database tables created yet for our database. We'll go ahead and create one. 
+
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/a4618052-ff50-4933-a704-9de9ad785159)
+
+Verify if it was successfully created and then exit the sql mode. 
+
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/e369fd02-decf-4d6e-b628-65ddac8511fe)
+
+6. On your instance, run the below commands to clone the Python program from my Git Repository and change the current working folder to the repository folder. We will then be editing the python file in order to connect to our database:
 
 ![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/6ada5c81-6a76-4da6-bbfd-9cde4028046a)
 
@@ -134,9 +153,9 @@ Ensure that the following defaults are selected:
 
 Ensure that you have entered also the correct password. 
 
+7. Once done, press on your keyboard simultaneously the **Ctrl+S** to save the changes and then **Ctrl+X** to close the nano editor. 
 
-
-
+8. 
 
 
 
