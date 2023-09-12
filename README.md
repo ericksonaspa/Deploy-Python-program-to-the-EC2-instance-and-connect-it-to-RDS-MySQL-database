@@ -66,35 +66,45 @@ Ensure that the following defaults are selected:
 
 ### Create an RDS instance
 
+1. From your dashboard, search for **RDS** and open it in a new tab. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/ec586101-e5e2-4b3d-af20-9dc4274dbe20)
 
+2. On your RDS dashboard, click on the **Create database**. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/f41b2d0d-dc52-4239-8c60-5aea763b91fb)
 
+3. On the **Choose a database creation method**, select the **Standard create**. Then **MySQL** on the **Engine options**. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/7928e613-6b59-4295-a3e6-087acece8a69)
 
+4. On the Templates, select the **Free Tier**. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/af8dbc46-d612-4ad9-a5ab-d47db92121a5)
 
+5. Put a name for your **DB instance identifier**, create a username and password. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/635deb1d-fb70-439d-8fc6-bfcf6aa58692)
 
+6. On the **Connectivity**, choose the **Connect to an EC2 compute resource**. Under the **EC2 instance**, select the EC2 instance we created earlier. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/f62dc866-35d9-4aa1-b1be-df07a2ef34ec)
 
+7. On the **VPC security group (firewall)**, choose **Create new** then name your security group. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/e85ebfeb-3447-48be-ba42-52f1a392cc2b)
 
+8. Scroll down, expand the **Additional configuration**. Put a name for your database under the **Database options > Initial database name**. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/39cef3a6-4446-4691-a2db-ddbd8dbf880a)
 
+9. Scroll down until you reach the bottom and then click on the **Create database**. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/75c0d313-07b7-4eae-8970-b274daa6ba2b)
 
+10. Wait for a few minutes until your database status becomes available. 
 
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/5667be8b-0506-477e-af1c-5cc68fbbb442)
 
 
 
