@@ -94,9 +94,9 @@ Ensure that the following defaults are selected:
 
 ![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/e85ebfeb-3447-48be-ba42-52f1a392cc2b)
 
-8. Scroll down, expand the **Additional configuration**. Put a name for your database under the **Database options > Initial database name**. 
+8. Scroll down, and expand the **Additional configuration**. Put a name for your database under the **Database options > Initial database name**. 
 
-![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/39cef3a6-4446-4691-a2db-ddbd8dbf880a)
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/75675fd6-5c6c-4cbd-ad8d-c946455f652d)
 
 9. Scroll down until you reach the bottom and then click on the **Create database**. 
 
@@ -106,23 +106,33 @@ Ensure that the following defaults are selected:
 
 ![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/5667be8b-0506-477e-af1c-5cc68fbbb442)
 
+### Connect to your instance and clone the Python program
 
+1. Go back to the EC2 console, and click **Connect**. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/9f871296-3e05-4743-8c11-3b069e7a1197)
 
+2. Select the **Session Manager**, and then click **Connect**. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/3427f58f-3297-4ed1-96ad-003e5a37376c)
 
+3. On your instance, run the below commands to clone the Python program from my Git Repository and change the current working folder to the repository folder. We will then be editing the python file in order to connect to our database:
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/6ada5c81-6a76-4da6-bbfd-9cde4028046a)
 
+4. Find the **ENDPOINT** inside the file and then edit its value from your **database endpoint name**. This can be found under the **Connectivity & security**. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/0f613eb7-923c-4c66-b843-27f243302dad)
 
+5. For the **USER** and **DBNAME**, these can be found on the **Configuration** tab. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/5bd6959b-ef2e-465e-9dd1-101fe7879870)
 
+6. Your final result should be like this below on the file: 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/48eae0f0-e7c6-4114-aafb-55d5011660df)
 
-
-
-
-
+Ensure that you have entered also the correct password. 
 
 
 
