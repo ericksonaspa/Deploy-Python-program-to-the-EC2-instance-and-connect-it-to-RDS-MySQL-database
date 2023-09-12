@@ -106,7 +106,7 @@ Ensure that the following defaults are selected:
 
 ![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/5667be8b-0506-477e-af1c-5cc68fbbb442)
 
-### Connect to your instance and clone the Python program
+### Launch your instance, connect to your database and create a table
 
 1. Go back to the EC2 console, and click **Connect**. 
 
@@ -135,108 +135,44 @@ Verify if it was successfully created and then exit the sql mode.
 
 ![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/e369fd02-decf-4d6e-b628-65ddac8511fe)
 
-6. On your instance, run the below commands to clone the Python program from my Git Repository and change the current working folder to the repository folder. We will then be editing the python file in order to connect to our database:
+### Clone the Python program from Git Repository
 
-![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/6ada5c81-6a76-4da6-bbfd-9cde4028046a)
+1. On your instance, run the below commands to clone the Python program from my Git Repository and change the current working folder to the repository folder. We will then be editing the python file in order to connect to our database:
 
-4. Find the **ENDPOINT** inside the file and then edit its value from your **database endpoint name**. This can be found under the **Connectivity & security**. 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/7a13366e-ad38-43a3-8ff9-963adb79b93c)
+
+2. Find the **ENDPOINT** inside the file and then edit its value from your **database endpoint name**. This can be found under the **Connectivity & security**. 
 
 ![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/0f613eb7-923c-4c66-b843-27f243302dad)
 
-5. For the **USER** and **DBNAME**, these can be found on the **Configuration** tab. 
+3. For the **USER** and **DBNAME**, these can be found on the **Configuration** tab. 
 
 ![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/5bd6959b-ef2e-465e-9dd1-101fe7879870)
 
-6. Your final result should be like this below on the file: 
+4. Your final result should be like this below on the file: 
 
 ![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/48eae0f0-e7c6-4114-aafb-55d5011660df)
 
 Ensure that you have entered also the correct password. 
 
-7. Once done, press on your keyboard simultaneously the **Ctrl+S** to save the changes and then **Ctrl+X** to close the nano editor. 
+5. Once done, press on your keyboard simultaneously the **Ctrl+S** to save the changes and then **Ctrl+X** to close the nano editor. 
 
-8. 
+6. Run the program by entering the commands below:
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/d5d8b953-42ed-44d5-a1f1-a4bb0e1a6af2)
 
+### Verify if the program output is stored on the database
 
+1. Log back in to your database. You can press the up arrow on your keyboard to view back each of the commands you run earlier. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/4f01cf35-e0e0-494b-b3e0-f7c00b8db5e1)
 
+2. Run the below commands again to go to your databases. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/9b23ca7c-5a59-4c57-86aa-b4dcaf7d8083)
 
+3. Enter the below command to display what is stored on your database table. 
 
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/ab13387e-e126-4165-8afc-2ab3e78fcc29)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Congratulations! As what you can see, the results after running the Python program were stored in our database. 
