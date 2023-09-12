@@ -1,6 +1,15 @@
 # Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database
 
-This project demonstrates how to deploy your Python program to the EC2 instance and connect it to the RDS MySQL database. 
+This project demonstrates how to deploy your Python program to the EC2 instance and connect it to the RDS MySQL database. The following items are contained in this project.
+
+- Create an IAM role
+- Launch an EC2 instance, set up the security group, and execute user data
+- Create an RDS database
+- Connect EC2 instance to the RDS database
+- Create a database table
+- Clone the Python program from Git Repository
+- Run the Python program
+- Check program output if stored on the RDS database
 
 ### Create an IAM role
 
@@ -117,7 +126,7 @@ Ensure that the following defaults are selected:
 ![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/3427f58f-3297-4ed1-96ad-003e5a37376c)
 
 3. Let's check if we can connect to our database. Enter the below command for us to log-in to the database.
-**Format: **mysql -h {database endpoint} -P 3306 -u {master username} -p
+**Format:** mysql -h {database endpoint} -P 3306 -u {master username} -p
 
 ![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/6737e16b-ded7-4485-929b-ec82374dfa04)
 
