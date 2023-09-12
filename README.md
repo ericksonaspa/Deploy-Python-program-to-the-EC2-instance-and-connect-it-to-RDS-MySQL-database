@@ -71,7 +71,7 @@ Ensure that the following defaults are selected:
 
 8. Scroll down, and enter the below commands on the **User data**. 
 
-![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/5dbc8313-d07f-44ba-a48a-044ee3eec339)
+![image](https://github.com/ericksonaspa/Deploy-Python-program-to-the-EC2-instance-and-connect-it-to-RDS-MySQL-database/assets/77118362/9f5215fe-c122-45b8-a532-c2325f51e918)
 
 9. Review the Summary and then click on the **Launch instance**. 
 
